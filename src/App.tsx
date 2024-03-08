@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./App.css"
+import { Link } from 'react-router-dom'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+     <div className="flex flex-col container justify-center items-center">
+         
+            <h1 className="text-[#555] my-12 font-[Inter] font-bold text-justify text-5xl">Welcome to ChatSphere</h1>
+            <p className="m-auto my-9 text-justify w-1/2">Welcome to ChatSphere, your ultimate destination for hassle-free communication. With ChatSphere, staying connected with your friends, family, and colleagues has never been easier. Say goodbye to long email threads and missed calls – ChatSphere brings all your conversations under one roof, right at your fingertips.</p>
+            <div className="bg-[#555] p-3 text-white rounded-md">
+            <Link to="/join">Join Chat</Link>
+            </div>
+          
+     </div>
+    </>
+  )
 }
 
-export default App;
+export default App
