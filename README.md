@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">Chat-app</h3>
 
-## Available Scripts
+<div align="center">
 
-In the project directory, you can run:
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p align="left"> Cette application vise à fournir une plateforme de communication en temps réel permettant aux utilisateurs de se connecter à diverses salles de chat et de partager des messages instantanément.
+    <br> 
+</p>
 
-### `npm test`
+## 📝 Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Authors](#authors)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧐 About <a name = "about"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ChatSphere est conçue pour être une plateforme dynamique et conviviale facilitant l'interaction fluide entre ses utilisateurs.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🏁 Getting Started <a name = "getting_started"></a>
 
-### `npm run eject`
+Vous utiliserez WebSocket (socket.io) pour activer la communication en temps réel entre les clients et le serveur, React pour construire l'interface utilisateur côté client, Node.js et Express pour configurer le serveur qui gérera les connexions WebSocket(socket.io), et Tailwind pour le style de l'application afin de garantir une expérience utilisateur attrayante et réactive.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Prerequisites
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ce dont vous avez besoin pour installer le logiciel et comment les installer.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Installing
 
-## Learn More
+Une série d’exemples étape par étape qui vous expliquent comment faire fonctionner un environnement de développement.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Dites quelle sera l’étape
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm i dependencies "express cors mongoose"
+```
+
+
+## 🎈 Usage <a name="usage"></a>
+
+Pour démarer l'application :
+
+```
+npm run dev
+```
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [MongoDB](https://www.mongodb.com/) - Database
+- [Express](https://expressjs.com/) - Server Framework
+- [ReactJs](https://reactjs.org/) - Web Framework
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@theziko1](https://github.com/theziko1) - Idea & Initial work
+
+
