@@ -14,6 +14,19 @@ const Chat = ({socket,username,room} : {socket : any , username : string, room :
     const [currentMsg , setCurrentMsg] = useState<string>('')
     const [ joinedMessage, setJoinedMessage ] = useState<any>(null);
     const navigate = useNavigate()
+
+
+    // const getUser =async () => {
+    //   const res = await fetch('http://localhost:5000/api/v1/user')
+    //   const data = await res.json()
+    //   console.log(data)
+    // }
+
+    const getMessages = async () => {
+      const res = await fetch('http://localhost:5000/api/v1/messages')
+      const data = await res.json()
+      setMessages(data)
+  }
     
    const sendMessage = async() => {
       if (currentMsg !== "") {
@@ -24,7 +37,7 @@ const Chat = ({socket,username,room} : {socket : any , username : string, room :
          }
          await socket.emit('send-msg',DataMsg)
          setMessages((list : any) => [...list, DataMsg]);
-         console.log(messages)
+        //  console.log(messages)
          setCurrentMsg("");
       }
       };
@@ -38,6 +51,9 @@ const Chat = ({socket,username,room} : {socket : any , username : string, room :
 
     
     useEffect(() => {
+ 
+      getMessages()
+
       socket?.on("chat", (data : content) => {
         console.log(data)
         setMessages((list) => [...list, data]);
