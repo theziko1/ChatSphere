@@ -25,20 +25,20 @@ const io = new Server(server,{
 
 io.on('connection', (socket) => {
     socket.on("newuser",(username) => {
-        console.log(username)
-        socket.broadcast.emit("username",username + "joined the conversation")
+        // console.log(username)
+        socket.broadcast.emit("new-user",username + " is joined the conversation")
     })
 
     socket.on("join-room",(data)=>{
        socket.join(data)
-       console.log(data)
+       
     })
     socket.on("leftuser",(username) => {
-        console.log(username)
-        socket.broadcast.emit("username",username + "left the conversation")
+        // console.log(username ," is left")
+        socket.broadcast.emit("left-user",username + " is left the conversation")
     })
     socket.on("send-msg",(message) => {
-        console.log("send msg : " ,message)
+        // console.log("send msg : " ,message)
         socket.to(message.room).emit("chat",message)
     })
   
