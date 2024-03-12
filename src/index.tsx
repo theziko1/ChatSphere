@@ -18,7 +18,7 @@ const router = createBrowserRouter([
   { path: "/", element: <App/>},
   { path: "/join", element: <Join/>},
   // { path: "/chat", element: <Chat socket={socket} username={""} room={1}/>},
-  
+    
 ]);
 root.render(
     <RouterProvider router={router}/>

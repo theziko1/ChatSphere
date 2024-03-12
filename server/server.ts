@@ -72,7 +72,7 @@ io.on('connection', (socket) => {
         const message = new Message({
             message: data.message,
             room: data.room,
-            user : data.user  
+            user : data.user
         })
         
 

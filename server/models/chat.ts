@@ -20,7 +20,6 @@ const messageSchema = new mongoose.Schema<IMessage>({
     },
     user: {
         type : String,
-        unique : true,
         required : true,
     },
 })

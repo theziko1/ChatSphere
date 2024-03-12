@@ -1,6 +1,6 @@
 import React , { useState , useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
-
+import axios from "axios"
 type content = {
   user : string,
   message : string,
@@ -21,10 +21,10 @@ const Chat = ({socket,username,room} : {socket : any , username : string, room :
     //   const data = await res.json()
     //   console.log(data)
     // }
-
+ 
     const getMessages = async () => {
-      const res = await fetch('http://localhost:5000/api/v1/messages')
-      const data = await res.json()
+      const res = await axios.get('http://localhost:5000/api/v1/messages')
+      const data = await res.data
       setMessages(data)
   }
     
